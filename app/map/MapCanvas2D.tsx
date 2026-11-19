@@ -20,8 +20,9 @@ export default function MapCanvas2D({
     };
 
     return (
-        <div className="overflow-auto">
+        <div className="w-full h-full overflow-auto">
             <div
+                className="min-w-full min-h-full"
                 ref={mapRef}
                 onPointerDown={(e) => {
                     if (onClick && e.target === mapRef.current) {

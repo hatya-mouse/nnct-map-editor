@@ -15,11 +15,12 @@ export default function Home() {
             label: "Point",
         };
         setNewId(newId + 1);
+        console.log("added item", newItem);
         setItems([...items, newItem]);
     };
 
     return (
-        <main>
+        <main className="w-screen h-screen">
             <MapCanvas2D items={items} onClick={addItem} />
         </main>
     );
