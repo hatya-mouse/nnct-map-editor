@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { MapItem, toCanvasCoord } from "./map";
 
-const radius = 40;
+const radius = 12;
 
 export default function MapItem2D({ item }: { item: MapItem }) {
     const canvasPos = useMemo(() => {
